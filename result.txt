@@ -1,9 +1,19 @@
 ResultOsUbuntu:
-	Write:
-		SimpleOs:    272496 ns/op
-		InContainer: 126208 ns/op golang:alpine
-		InVolume :   109110 ns/op golang:alpine
-	Read:
-		SimpleOs:    18606 ns/op
-		InContainer: 17189 ns/op golang:alpine
-		InVolume :   17579 ns/op golang:alpine
+	10kb
+		Write:
+			SimpleOs:    272496 ns/op
+			InContainer: 126208 ns/op golang:alpine
+			InVolume :   109110 ns/op golang:alpine
+		Read:
+			SimpleOs:    18606 ns/op
+			InContainer: 17189 ns/op golang:alpine
+			InVolume :   17579 ns/op golang:alpine
+	10Mb
+		Write:
+            SimpleOs:    223289893 ns/op
+            InContainer:  41128982 ns/op golang:alpine
+            InVolume :    42975743 ns/op golang:alpine
+        Read:
+            SimpleOs:    5171870 ns/op
+            InContainer: 4914316 ns/op golang:alpine
+            InVolume :   5224341 ns/op golang:alpine

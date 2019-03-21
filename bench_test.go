@@ -12,7 +12,7 @@ func BenchmarkWriteFile (b *testing.B) {
 
 		var s []byte
 
-		for k:=0; k<10000 ; k++  {
+		for k:=0; k<10000000 ; k++  {
 			s = append(s, []byte("w")...)
 		}
 
